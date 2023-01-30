@@ -12,17 +12,18 @@ function Nav() {
                 <Logo/>
             </div>
             <div className="menu hidden sm:flex font-light gap-5">
-                <LinkBtn href={"/"} name="Techs"></LinkBtn>
-                <LinkBtn href={"/"} name="Chat"></LinkBtn>
-                <LinkBtn href={"/"} name="Contact"></LinkBtn>
+                <LinkBtn href={"/techs"} name="Techs"></LinkBtn>
+                <LinkBtn href={"/chat"} name="Chat"></LinkBtn>
+                <LinkBtn href={"/contact"} name="Contact"></LinkBtn>
                 <LinkBtn href="/" name="Sources" logo={<BsGithub className='inline mr-2'/>}/>
             </div>
             <div>
-
             <div className="lightMode ">
                 <LightMode/>
             </div>
-            <div className="side-menu hi "></div>
+            <div className="side-menu hidden sm:show">
+                
+            </div>
             </div>
         </div>
     </div>

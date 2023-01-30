@@ -1,11 +1,18 @@
 import React, { ReactComponentElement, ReactNode } from 'react'
 import Link from 'next/link'
-
+import {useRouter} from "next/router"
 
 function LinkBtn({href,name,logo}:{href:any;name:string;logo?:ReactNode}) {
-  return (
-    <Link className='py-2 px-4  hover:bg-cyan-200' href={href} 
-     as="button">{logo}{name}</Link>
+    const router = useRouter();
+    const active:boolean = router.asPath === href;
+
+    function handleClick (e:any) {
+        e.preventDefault();
+        router.push(href);
+    }
+    return (
+    <div className={`py-2 px-4 hover:cursor-pointer hover:bg-cyan-200 ${active && "bg-cyan-200"}`}onClick={handleClick} 
+     >{logo}{name}</div>
   )
 }
 
