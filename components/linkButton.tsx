@@ -20,7 +20,7 @@ function LinkBtn({
   }
   return (
     <div
-      className={`py-2 px-4 hover:cursor-pointer hover:text-dark hover:bg-cyan-200 ${
+      className={`py-2 px-4 hover:cursor-pointer hover:underline hover:text-slate-900 hover:bg-cyan-200 ${
         active && "bg-cyan-200"
       }`}
       onClick={handleClick}

@@ -17,7 +17,7 @@ module.exports = {
         dark: "#202023",
       },
       spacing: {
-        maxWidth: "1000px",
+        maxW: "980px",
       },
     },
   },
