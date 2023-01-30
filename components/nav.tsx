@@ -5,7 +5,7 @@ import Logo from "./logo";
 import { BsGithub } from "react-icons/bs";
 import LinkBtn from "./linkButton";
 import { UseContext } from "@/context/context";
-
+import { AiOutlineMenu } from "react-icons/ai";
 function Nav({ path }: any) {
   const { lightMode } = UseContext();
   return (
@@ -27,8 +27,15 @@ function Nav({ path }: any) {
           />
         </div>
         <div>
-          <div className="lightMode ">
+          <div className="menu-group w-1/3 sm:w-auto flex gap-2">
             <LightMode />
+            <div
+              className="block p-2 bg-secondLight  border-dark text-dark border-[.5px]
+            rounded-sm dark:border-primaryLight dark:bg-dark dark:text-primaryLight
+            sm:hidden"
+            >
+              <AiOutlineMenu />
+            </div>
           </div>
           <div className="side-menu hidden sm:show"></div>
         </div>
