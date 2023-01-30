@@ -1,5 +1,4 @@
 export interface AppState {
-    lightMode:boolean;
-    setLightMode:()=> void;
-    setDarkMode:()=> void;
+  lightMode: boolean;
+  toggleColorMode: () => void;
 }

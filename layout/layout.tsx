@@ -13,9 +13,7 @@ function Layout({ children, router }: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div
-        className={`mt-14 ${lightMode ? "bg-primaryLight" : "dark bg-dark"}`}
-      >
+      <div className={`mt-14 ${lightMode ? "bg-primaryLight" : "dark"}`}>
         <Nav />
         {children}
         <Footer />
