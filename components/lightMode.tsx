@@ -1,9 +1,14 @@
-import React from 'react'
+import React ,{ useState} from 'react'
+import { UseContext } from '@/context/context';
+
 
 function LightMode() {
-  return (
+
+  const {lightMode,setDarkMode,setLightMode} = UseContext();
+  
+    return (
     <div>
-        
+        <button onClick={setDarkMode}>dark</button>
     </div>
   )
 }
